@@ -1,5 +1,7 @@
 body{
     color:white;
+    margin: 0;
+    padding: 0;
 }
 
 #main{
@@ -8,9 +10,44 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 100px;
-    width: 95%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
+}
+
+#top{
+    display: flex;
+    position: relative;
+    padding-top: 25px;
+}
+
+#top span{
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#top input{
+    background: transparent;
+    border:transparent;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    outline: none;
+}
+
+.Google{
+    background: rgb(98, 131, 231);
+    border-radius: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.Naver{
+    background: rgb(7, 179, 93);
+    border-radius: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 .hidden{
@@ -33,6 +70,8 @@ body{
 
 img{
     position: fixed;
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
     top: 0;
@@ -55,12 +94,14 @@ li{
     margin-top: 30px;
 }
 
-input{
+#main input{
     background: transparent;
     border:transparent;
     border-bottom: 1px solid white;
     font-size: 30px;
     text-align: center;
+    color: white;
+    outline: none;
 }
 
 #greeting{
@@ -73,7 +114,7 @@ input{
 
 #todo-list{
     position: relative;
-    left: -20px;
+    padding: 0;
     width: 400px;
     height: 150px;
     overflow: auto;
@@ -99,7 +140,7 @@ input{
 #quotes{
     position: absolute;
     font-size: 20px;
-    bottom: 2%;
+    bottom: 5%;
     opacity: .7;
 }
 
