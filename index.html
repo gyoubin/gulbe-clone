@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gulbe</title>
+</head>
+<body>
+    <div id="main">
+        <h2 id="clock">00:00</h2>
+        <form id="login-form">
+            <input
+                required
+                maxlength="15"
+                type="text"
+                placeholder="What is your name?"
+            />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do" required>
+        </form>
+        <ul id="todo-list"></ul>
+        <div id="quotes">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>    
+    </div>
+    <div id="top">
+        <form id="search-box" action="http://www.google.co.kr/search" target="_blank" autocomplete="off">
+            <input type="hidden">
+            <span class="Google">G</span>
+            <input name=query required size="10">
+            </form>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
